@@ -14,7 +14,7 @@ public class Block {
         this.previousHash = previousHash;
         this.timestamp = timestamp;
         this.nonce = nonce;
-        this.hash = null;
+        this.hash = calculatedHash();
     }
 
     public String getPreviousHash() {
@@ -34,7 +34,8 @@ public class Block {
     }
 
     public String calculatedHash() throws NoSuchAlgorithmException {
-        return null;
+        String dataToHash = previousHash + timestamp + nonce;
+        return calculateHash(dataToHash);
     }
 
     /// Supporting functions that you'll need.
