@@ -21,6 +21,18 @@ The exercise involved:
 - Working on isEmpty and Size functions.
 - Ensuring all negative tests pass.
 
+## Running the Project
+
+To run the project and test the implementation, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Execute the following command to run the unit tests:
+
+```bash
+./gradlew clean build
+```
+
 ### Acknowledgments
 
 Special thanks to @barinek for creating this educational exercise.
